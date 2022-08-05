@@ -1,0 +1,15 @@
+{
+    "name": "paulo/paulo",
+    "autoload": {
+        "psr-4": {
+            "app\\": "app"
+        }
+    },
+    "authors": [
+        {
+            "name": "Paulo Henrique",
+            "email": "paulo.henrique.braguim@outlook.com"
+        }
+    ],
+    "require": {}
+}
