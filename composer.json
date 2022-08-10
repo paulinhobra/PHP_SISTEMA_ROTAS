@@ -11,5 +11,7 @@
             "email": "paulo.henrique.braguim@outlook.com"
         }
     ],
-    "require": {}
+    "require": {
+        "league/plates": "^3.4"
+    }
 }
