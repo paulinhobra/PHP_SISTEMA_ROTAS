@@ -16,7 +16,8 @@ try{
         throw new Exception("A Rota não existe");
     }
 
-    $routes[$request][$uri];
+    $controller = $routes[$request][$uri];
+    $controller();
 
 }catch(Exception $e){
     echo $e->getMessage();

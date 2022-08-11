@@ -9,5 +9,11 @@
 </head>
 <body>
     <h1>CONTATO</h1>
+
+    <form action="/contact" method="post">
+        <input type="text" name="nome" placeholder="nome">
+        <input type="text" name="email" placeholder="E-mail">
+        <button type="submit">Enviar</button>
+    </form>
 </body>
 </html>

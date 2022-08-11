@@ -15,7 +15,7 @@ function load(string $controller, string $action){
             throw new Exception("O método {$action} não existe no controller {$controller}");
         }
 
-        $controllerInstance->$action();
+        $controllerInstance->$action((object) $_REQUEST);
 
     }catch(Exception $e){
         echo $e->getMessage();
@@ -26,10 +26,10 @@ function load(string $controller, string $action){
 
 $routes = [
     'GET' => [
-       '/' => load('HomeController', 'index'),
-       '/contact' =>  load('ContactController', 'index')
+       '/' => fn() => load('HomeController', 'index'),
+       '/contact' => fn() => load('ContactController', 'index')
     ],
     'POST'=> [
-        '/contact' => load('ContactController', 'store')
+        '/contact' => fn() => load('ContactController', 'store')
     ]
 ];

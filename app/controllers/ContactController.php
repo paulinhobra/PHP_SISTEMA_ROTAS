@@ -8,8 +8,8 @@ class ContactController {
         return Controller::view("contact");
     }
 
-    public function store(){
-       
+    public function store($params){
+       var_dump($params);
     }
 
 }
