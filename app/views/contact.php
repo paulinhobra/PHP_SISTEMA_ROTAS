@@ -1,3 +1,4 @@
+<?php $this->layout("master"); ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -7,6 +8,6 @@
     <title>Contato</title>
 </head>
 <body>
-    
+    <h1>CONTATO</h1>
 </body>
 </html>
